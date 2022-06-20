@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@400;700&display=swap');
+
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+    background-position: center;
+    background-size: cover;
+}
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 90%;
+  background: #003049;
+  border-radius: 15px;
+  min-height: 500px;
+  box-shadow: 10px 10px 30px 5px rgba(255,255,255,0.5);
+  font-family: 'Montserrat', sans-serif;
+  color: aliceblue;
+
+}
+
+#title{
+    font-size: 2.5rem;
+    padding: 10px;
+    color:aliceblue;
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+
+}
+p{
+    font-size: 20px;
+    padding:3px;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+#display{
+    margin-top: 15px;
+    padding: 10px;
+    height: 80px;
+    background:aliceblue;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 3px 20px 3px rgba(0,0,0,0.3);
+}
+input{
+    margin-top: 15px;
+    display: block;
+    padding: 10px;
+    width: 100%;
+    font-size: 24px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+#btn{
+    display: block;
+    width: 50%;
+    margin-top: 20px;
+    height: 50px;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    border:1px solid #003049;
+    background: transparent;
+    color: white;
+    box-shadow: 3px 3px 20px 3px rgba(0,0,0,0.5);
+    margin-bottom: 20px;
+
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 450px) and (max-width: 1024px){
+    .container{
+        width:70%;
+    }
+    
+}
+/* Media Query for Laptops and Desktops */
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1600px){
+    .container{
+        width: 60%;
+    }
+    #display{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
